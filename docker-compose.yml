@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  node:
+    build:
+      context: .docker/node
+      args:
+        PROJECT_WORKDIR: ${PROJECT_WORKDIR}
+        USER_ID: ${USER_ID}
+        GROUP_ID: ${GROUP_ID}
+    container_name: container_name-node
+    user: "${USER_ID}:${GROUP_ID}"
+    tty: true
+    volumes:
+      - ${YARN_PATH}:/root/.cache
+      - ${PROJECT_PATH}:${PROJECT_WORKDIR}:cached
+    env_file: .env
+

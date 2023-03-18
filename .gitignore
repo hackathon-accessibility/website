@@ -1,5 +1,9 @@
 # PhpStorm
 .idea
 
+# Docker
+/.env
+/var
+
 node_modules/
 
