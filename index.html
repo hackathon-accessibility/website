@@ -10,25 +10,34 @@
 </head>
 <body>
     <header>
-        <button id="burger-button" aria-expanded="false" aria-label="open menu" data-aria-label-closed="close menu" data-aria-label-open="open menu">
-            <svg viewBox="0 0 100 100">
-                <line id="burger-top" x1="10" y1="25" x2="90" y2="25" stroke="black"  stroke-width="10"/>
-                <line id="burger-middle" x1="10" y1="50" x2="90" y2="50" stroke="black" stroke-width="10"/>
-                <line id="burger-bottom" x1="10" y1="75" x2="90" y2="75" stroke="black"  stroke-width="10"/>
-            </svg>
-        </button>
-        <nav id="burger-menu-content" aria-expanded="false">
-            <ul>
-                <li>
-                    <a href="#">Link1</a>
-                </li>
-                <li>
-                    <a href="#">Link2</a>
-                </li>
-            </ul>
+        <nav id="primary-navigation" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <p>Hello World</p>
+    <main id="main">
+        Lorem ipsum
+    </main>
     <script src="main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" defer></script>
 </body>
