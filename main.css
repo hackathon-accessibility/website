@@ -1,0 +1,22 @@
+#burger-button {
+    line-height: 0;
+}
+#burger-button svg {
+    height: 25px;
+    width: 25px;
+}
+#burger-button[aria-expanded="true"] #burger-top {
+    position: relative;
+    transform-origin: 25px 50px;
+    transform: rotate(45deg);
+}
+#burger-button[aria-expanded="true"] #burger-middle {
+    display: none;
+}
+#burger-button[aria-expanded="true"] #burger-bottom {
+    transform-origin: 25px 50px;
+    transform: rotate(-45deg);
+}
+#burger-menu-content[aria-expanded="false"] {
+    display: none;
+}
