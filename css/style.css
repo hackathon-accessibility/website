@@ -102,12 +102,13 @@ body a:hover {
 @media (prefers-color-scheme: dark) {
   .bg-dark,
   body {
-    --bs-body-bg: $black;
-    --bs-body-color: $white;
-    --bs-nav-link-color: $white;
+    --bs-body-bg: #000;
+    --bs-body-color: #FFF;
+    --bs-nav-link-color: #FFF;
   }
-  #primary-navigation .navbar-brand {
-    filter: invert(100%);
+  .bg-dark .presentation .content,
+  body .presentation .content {
+    background-color: #000000;
   }
 }
 .presentation {

@@ -17,6 +17,7 @@ header {
 
     .navbar-toggler {
         border: var(--bs-border-width) solid $white;
+
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
         }
@@ -70,15 +71,18 @@ body {
         color: $white;
     }
 
-    h1,h2 {
+    h1, h2 {
         font-weight: 800;
     }
+
     h3 {
         font-weight: 500;
     }
-    h4,h5 {
+
+    h4, h5 {
         font-weight: 600
     }
+
     h6 {
         font-weight: 400;
     }
@@ -129,38 +133,42 @@ body {
 
     .bg-dark,
     body {
-        --bs-body-bg: $black;
-        --bs-body-color: $white;
-        --bs-nav-link-color: $white;
-    }
+        --bs-body-bg: #000;
+        --bs-body-color: #FFF;
+        --bs-nav-link-color: #FFF;
 
-    #primary-navigation {
-        .navbar-brand {
-            filter: invert(100%);
+        .presentation .content {
+            background-color: $black;
         }
+    }
+    .text-dark {
+        
     }
 }
 
 .presentation {
-  margin: 0 auto;
-  .title {
-    font-weight: 700;
-      margin-bottom: 20px;
-    line-height: 24px;
-    text-align: center;
+    margin: 0 auto;
 
-  }
-  .header {
-    background:#FDD037;
-    height: 47px;
-    border-radius:5px 0;
-  }
-  .content {
-    margin: 0 15px;
-    margin-top: -32px;
-    padding: 20px 40px;
-    background:white;
-    border-radius: 5px;
-    text-align: left;
-  }
+    .title {
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 24px;
+        text-align: center;
+
+    }
+
+    .header {
+        background: #FDD037;
+        height: 47px;
+        border-radius: 5px 0;
+    }
+
+    .content {
+        margin: 0 15px;
+        margin-top: -32px;
+        padding: 20px 40px;
+        background: white;
+        border-radius: 5px;
+        text-align: left;
+    }
 }
