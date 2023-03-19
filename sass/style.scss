@@ -3,8 +3,22 @@ $white: #fff;
 $black: #000;
 
 body {
-    --bs-body-bg: #fff;
-    --bs-body-color: #000;
+    --bs-body-bg: $white;
+
+    .bg-dark {
+        background: $black;
+        color: $white;
+    }
+
+    a {
+        color: $black;
+        text-decoration: underline;
+
+        &:hover {
+            color: $black;
+            outline: 3px solid $black;
+        }
+    }
 }
 
 #primary-navigation {
@@ -12,9 +26,12 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+
+    .bg-dark,
     body {
         --bs-body-bg: $black;
         --bs-body-color: $white;
+        --bs-nav-link-color: $white;
     }
 
     #primary-navigation {
