@@ -1,1 +1,1 @@
-# website
+# Project website for CloudFest Hackathon
