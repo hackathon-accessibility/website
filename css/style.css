@@ -13,6 +13,20 @@ body a:hover {
   color: #000;
   outline: 3px solid #000;
 }
+@media (min-width: 768px) {
+  body .image-overlay img {
+    opacity: 0.3;
+  }
+}
+@media (min-width: 768px) {
+  body .image-overlay .center-text {
+    left: 15px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 100%;
+  }
+}
 
 #primary-navigation {
   background: #fff;
