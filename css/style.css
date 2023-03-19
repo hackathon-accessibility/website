@@ -1,6 +1,21 @@
+body {
+  --bs-body-bg: #fff;
+  --bs-body-color: #000;
+}
+
+#primary-navigation {
+  background: #fff;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
-    --bs-body-bg: darkgray;
-    --bs-body-color: white;
+    --bs-body-bg: $black;
+    --bs-body-color: $white;
+  }
+  #primary-navigation {
+    background: #000;
+  }
+  #primary-navigation .navbar-brand {
+    filter: invert(100%);
   }
 }
