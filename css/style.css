@@ -1,6 +1,17 @@
 body {
-  --bs-body-bg: #fff;
-  --bs-body-color: #000;
+  --bs-body-bg: $white;
+}
+body .bg-dark {
+  background: #000;
+  color: #fff;
+}
+body a {
+  color: #000;
+  text-decoration: underline;
+}
+body a:hover {
+  color: #000;
+  outline: 3px solid #000;
 }
 
 #primary-navigation {
@@ -8,9 +19,11 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+  .bg-dark,
   body {
     --bs-body-bg: $black;
     --bs-body-color: $white;
+    --bs-nav-link-color: $white;
   }
   #primary-navigation {
     background: #000;
