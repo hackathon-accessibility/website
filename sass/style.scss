@@ -19,6 +19,26 @@ body {
             outline: 3px solid $black;
         }
     }
+
+    .image-overlay {
+        img {
+            @media (min-width: 768px) {
+                opacity: .3
+            }
+        }
+
+        .center-text {
+            @media (min-width: 768px) {
+                left: 15px;
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                width: 100%;
+            }
+
+        }
+
+    }
 }
 
 #primary-navigation {
