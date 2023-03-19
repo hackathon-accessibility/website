@@ -126,43 +126,51 @@ h2 {
   text-align: center;
   font-size: 17px;
   display: inline;
+  font-weight: 700;
 }
 h2::before {
   position: absolute;
   content: "";
-  height: 4px;
+  height: 6px;
   bottom: 5px;
   margin: 0 auto;
-  left: 0;
-  right: 0;
+  left: -10px;
+  right: -10px;
   background: #00D8FE;
   z-index: -1;
 }
 
+h3 {
+  text-align: center;
+  font-size: 18px !important;
+  margin-bottom: 10px;
+}
+
 .presentation {
   margin: 0 auto;
-}
-.presentation h2 {
-  display: block;
-}
-.presentation .title {
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 24px;
-  text-align: center;
-}
-.presentation .header {
-  background: #FDD037;
-  margin-top: 30px;
-  height: 47px;
-  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 .presentation .content {
   margin: 0 15px;
-  margin-top: -32px;
-  padding: 20px 45px;
+  padding: 8px 10px;
   background: white;
   border-radius: 5px;
+  position: relative;
+}
+.presentation .content::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  top: -10px;
+  margin: 0 auto;
+  left: -10px;
+  right: -10px;
+  background: #FDD037;
+  z-index: -1;
+  border-radius: 5px 5px 0 0;
 }
 .presentation .content ul.list {
   list-style: none;
@@ -175,6 +183,24 @@ h2::before {
 .presentation .content ul.list li::before {
   content: "_";
   color: #00D8FE;
+}
+.presentation .block-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.presentation .block {
+  padding: 20px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.presentation .block:hover {
+  background: rgba(253, 208, 55, 0.2509803922);
+  cursor: default;
+}
+.presentation .block span {
+  font-size: 16px;
+  font-weight: 700;
 }
 .presentation .subtitle {
   font-weight: 700;
