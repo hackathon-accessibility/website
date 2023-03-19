@@ -1,9 +1,10 @@
 html body {
-    background-color: green;
+    --bs-body-bg: green;
 }
 
 @media (prefers-color-scheme: dark) {
-    html body {
-       background-color: darkgray;
+    body {
+        --bs-body-bg: darkgray;
+        --bs-body-color: white;
     }
 }
