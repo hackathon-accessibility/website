@@ -1,3 +1,9 @@
-body {
+html body {
   background-color: green;
+}
+
+@media (prefers-color-scheme: dark) {
+  html body {
+    background-color: darkgray;
+  }
 }
