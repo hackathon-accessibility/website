@@ -1,11 +1,11 @@
 header {
-  background: #000;
+  background: #000000;
 }
 header #primary-navigation {
   padding: 15px 0;
 }
 header #primary-navigation .navbar-toggler {
-  background: #fff;
+  background: #ffffff;
 }
 header #primary-navigation .navbar-brand img {
   max-width: 220px;
@@ -13,64 +13,24 @@ header #primary-navigation .navbar-brand img {
 header #primary-navigation .navbar-nav a.nav-link,
 header #primary-navigation .navbar-nav a.nav-link.active {
   border: 3px solid #F4F4F4;
-  color: #fff;
+  color: #ffffff;
   padding: 0.5rem 0.75rem;
 }
 header #primary-navigation .navbar-nav a.nav-link:focus, header #primary-navigation .navbar-nav a.nav-link:hover,
 header #primary-navigation .navbar-nav a.nav-link.active:focus,
 header #primary-navigation .navbar-nav a.nav-link.active:hover {
   border-color: #fdd037;
-  color: #000;
+  color: #000000;
   background-color: #fdd037;
 }
 
-/* poppins-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"), url("../fonts/poppins-v20-latin-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/poppins-v20-latin-800.woff2") format("woff2"), url("../fonts/poppins-v20-latin-800.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 body {
   --bs-body-bg: $white;
   --bs-body-font-family: "Poppins", sans-serif;
 }
 body .bg-dark {
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
 }
 body h1, body h2 {
   font-weight: 800;
@@ -85,12 +45,12 @@ body h6 {
   font-weight: 400;
 }
 body a {
-  color: #000;
+  color: #000000;
   text-decoration: underline;
 }
 body a:hover {
-  color: #000;
-  outline: 3px solid #000;
+  color: #000000;
+  outline: 3px solid #000000;
 }
 @media (min-width: 768px) {
   body .image-overlay:before {
@@ -99,15 +59,15 @@ body a:hover {
     height: 100%;
     display: block;
     position: absolute;
-    opacity: 0.6;
+    opacity: 0.8;
     top: 0;
     left: 0;
-    background: #000;
+    background: #000000;
   }
 }
 @media (min-width: 768px) {
   body .image-overlay .center-text {
-    color: #fff;
+    color: #ffffff;
     left: 15px;
     position: absolute;
     transform: translateY(-50%);
@@ -132,7 +92,7 @@ body a:hover {
 }
 .presentation .title {
   font-weight: 700;
-  font-size: 20px;
+  margin-bottom: 20px;
   line-height: 24px;
   text-align: center;
 }
@@ -144,7 +104,7 @@ body a:hover {
 .presentation .content {
   margin: 0 15px;
   margin-top: -32px;
-  padding: 7px 3px;
+  padding: 20px 40px;
   background: white;
   border-radius: 5px;
   text-align: center;
