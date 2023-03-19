@@ -1,3 +1,10 @@
+.subheadline {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 50px;
+}
+
 header {
   background: #000000;
 }
@@ -24,9 +31,18 @@ header #primary-navigation .navbar-nav a.nav-link.active:hover {
   background-color: #fdd037;
 }
 
+footer {
+  background: #000000;
+  padding: 15px;
+  color: #ffffff;
+}
+
 body {
   --bs-body-bg: $white;
   --bs-body-font-family: "Poppins", sans-serif;
+}
+body h1 {
+  font-size: 80px;
 }
 body .bg-dark {
   background: #000000;
@@ -53,6 +69,9 @@ body a:hover {
   outline: 3px solid #000000;
 }
 @media (min-width: 768px) {
+  body .image-overlay {
+    overflow: hidden;
+  }
   body .image-overlay:before {
     content: "";
     width: 100%;
@@ -107,5 +126,5 @@ body a:hover {
   padding: 20px 40px;
   background: white;
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
 }

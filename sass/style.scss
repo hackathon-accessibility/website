@@ -4,6 +4,13 @@ $lightgray: #F4F4F4;
 $black: #000000;
 $yellow: #fdd037;
 
+.subheadline {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 50px;
+}
+
 header {
     background: $black;
 
@@ -40,9 +47,19 @@ header {
     }
 }
 
+footer {
+    background: $black;
+    padding: 15px;
+    color: $white;
+}
+
 body {
     --bs-body-bg: $white;
     --bs-body-font-family: "Poppins", sans-serif;
+
+    h1 {
+        font-size: 80px;
+    }
 
     .bg-dark {
         background: $black;
@@ -73,7 +90,9 @@ body {
     }
 
     .image-overlay {
+
         @media (min-width: 768px) {
+            overflow: hidden;
             &:before {
                 content: "";
                 width: 100%;
@@ -138,6 +157,6 @@ body {
     padding: 20px 40px;
     background:white;
     border-radius: 5px;
-    text-align:center;
+    text-align: left;
   }
 }
