@@ -14,13 +14,20 @@ header {
             background: $white;
         }
 
+        .navbar-brand {
+            img {
+                max-width: 220px;
+            }
+
+        }
+
         .navbar-nav {
 
             a.nav-link,
             a.nav-link.active {
-
-                border: 2px solid $lightgray;
+                border: 3px solid $lightgray;
                 color: $white;
+                padding: .5rem .75rem;
 
                 &:focus,
                 &:hover {
