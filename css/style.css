@@ -1,3 +1,19 @@
+header {
+  background: #000;
+}
+header .navbar-nav a.nav-link,
+header .navbar-nav a.nav-link.active {
+  border: 2px solid #F4F4F4;
+  color: #fff;
+}
+header .navbar-nav a.nav-link:focus, header .navbar-nav a.nav-link:hover,
+header .navbar-nav a.nav-link.active:focus,
+header .navbar-nav a.nav-link.active:hover {
+  border-color: #fdd037;
+  color: #000;
+  background-color: #fdd037;
+}
+
 body {
   --bs-body-bg: $white;
 }
@@ -28,19 +44,12 @@ body a:hover {
   }
 }
 
-#primary-navigation {
-  background: #fff;
-}
-
 @media (prefers-color-scheme: dark) {
   .bg-dark,
   body {
     --bs-body-bg: $black;
     --bs-body-color: $white;
     --bs-nav-link-color: $white;
-  }
-  #primary-navigation {
-    background: #000;
   }
   #primary-navigation .navbar-brand {
     filter: invert(100%);

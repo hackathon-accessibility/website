@@ -1,7 +1,30 @@
 // colors
 $white: #fff;
+$lightgray: #F4F4F4;
 $black: #000;
 $yellow: #fdd037;
+
+header {
+    background: $black;
+
+    .navbar-nav {
+
+        a.nav-link,
+        a.nav-link.active {
+
+            border: 2px solid $lightgray;
+            color: $white;
+
+            &:focus,
+            &:hover {
+                border-color: $yellow;
+                color: $black;
+                background-color: $yellow;
+            }
+        }
+    }
+
+}
 
 body {
     --bs-body-bg: $white;
@@ -42,10 +65,6 @@ body {
     }
 }
 
-#primary-navigation {
-    background: $white
-}
-
 @media (prefers-color-scheme: dark) {
 
     .bg-dark,
@@ -56,8 +75,6 @@ body {
     }
 
     #primary-navigation {
-        background: $black;
-
         .navbar-brand {
             filter: invert(100%);
         }
