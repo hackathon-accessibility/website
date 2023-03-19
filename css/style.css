@@ -1,73 +1,40 @@
 header {
-  background: #000;
+  background: #000000;
   --bs-navbar-color: #000;
 }
 header .navbar-toggler {
-  border: var(--bs-border-width) solid #fff;
+  border: var(--bs-border-width) solid #ffffff;
 }
 header .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-header .navbar-nav a.nav-link,
-header .navbar-nav a.nav-link.active {
-  border: 2px solid #F4F4F4;
-  color: #fff;
+header #primary-navigation {
+  padding: 15px 0;
 }
-header .navbar-nav a.nav-link:focus, header .navbar-nav a.nav-link:hover,
-header .navbar-nav a.nav-link.active:focus,
-header .navbar-nav a.nav-link.active:hover {
+header #primary-navigation .navbar-brand img {
+  max-width: 220px;
+}
+header #primary-navigation .navbar-nav a.nav-link,
+header #primary-navigation .navbar-nav a.nav-link.active {
+  border: 3px solid #F4F4F4;
+  color: #ffffff;
+  padding: 0.5rem 0.75rem;
+}
+header #primary-navigation .navbar-nav a.nav-link:focus, header #primary-navigation .navbar-nav a.nav-link:hover,
+header #primary-navigation .navbar-nav a.nav-link.active:focus,
+header #primary-navigation .navbar-nav a.nav-link.active:hover {
   border-color: #fdd037;
-  color: #000;
+  color: #000000;
   background-color: #fdd037;
 }
 
-/* poppins-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"), url("../fonts/poppins-v20-latin-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/poppins-v20-latin-800.woff2") format("woff2"), url("../fonts/poppins-v20-latin-800.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 body {
   --bs-body-bg: $white;
   --bs-body-font-family: "Poppins", sans-serif;
 }
 body .bg-dark {
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
 }
 body h1, body h2 {
   font-weight: 800;
@@ -82,20 +49,29 @@ body h6 {
   font-weight: 400;
 }
 body a {
-  color: #000;
+  color: #000000;
   text-decoration: underline;
 }
 body a:hover {
-  color: #000;
-  outline: 3px solid #000;
+  color: #000000;
+  outline: 3px solid #000000;
 }
 @media (min-width: 768px) {
-  body .image-overlay img {
-    opacity: 0.3;
+  body .image-overlay:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    background: #000000;
   }
 }
 @media (min-width: 768px) {
   body .image-overlay .center-text {
+    color: #ffffff;
     left: 15px;
     position: absolute;
     transform: translateY(-50%);
@@ -114,4 +90,26 @@ body a:hover {
   #primary-navigation .navbar-brand {
     filter: invert(100%);
   }
+}
+.presentation {
+  margin: 0 auto;
+}
+.presentation .title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.presentation .header {
+  background: #FDD037;
+  height: 47px;
+  border-radius: 5px 0;
+}
+.presentation .content {
+  margin: 0 15px;
+  margin-top: -32px;
+  padding: 20px 40px;
+  background: white;
+  border-radius: 5px;
+  text-align: center;
 }
