@@ -3,6 +3,7 @@ $white: #ffffff;
 $lightgray: #F4F4F4;
 $black: #000000;
 $yellow: #fdd037;
+$lightblue: #00D8FE;
 
 .subheadline {
     font-size: 22px;
@@ -52,12 +53,6 @@ header {
     }
 }
 
-footer {
-    background: $black;
-    padding: 15px;
-    color: $white;
-}
-
 body {
     --bs-body-bg: $white;
     --bs-body-font-family: "Poppins", sans-serif;
@@ -85,6 +80,13 @@ body {
 
     h6 {
         font-weight: 400;
+    }
+
+    .btn {
+        &.btn-primary {
+            background: $lightblue;
+            color: $black;
+        }
     }
 
     a {
@@ -126,6 +128,22 @@ body {
 
         }
 
+    }
+
+    footer {
+        background: $black;
+        padding: 35px;
+        color: $white;
+
+        a {
+            color: $white;
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+
+        }
     }
 }
 
