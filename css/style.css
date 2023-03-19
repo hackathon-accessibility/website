@@ -120,6 +120,25 @@ body footer a:hover, body footer a:focus {
     background-color: #000000;
   }
 }
+h2 {
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
+  display: inline;
+}
+h2::before {
+  position: absolute;
+  content: "";
+  height: 6px;
+  bottom: 8px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background: #00D8FE;
+  z-index: -1;
+}
+
 .presentation {
   margin: 0 auto;
 }
@@ -132,13 +151,30 @@ body footer a:hover, body footer a:focus {
 .presentation .header {
   background: #FDD037;
   height: 47px;
-  border-radius: 5px 0;
+  border-radius: 5px 5px 0 0;
 }
 .presentation .content {
   margin: 0 15px;
   margin-top: -32px;
-  padding: 20px 40px;
+  padding: 8px 10px;
   background: white;
   border-radius: 5px;
-  text-align: left;
+}
+.presentation .content ul.list {
+  list-style: none;
+  padding-left: 10px;
+}
+.presentation .content ul.list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.presentation .content ul.list li::before {
+  content: "_";
+  color: #00D8FE;
+}
+.presentation .subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 10px 0;
 }
