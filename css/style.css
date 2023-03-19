@@ -1,3 +1,26 @@
+header {
+  background: #000;
+  --bs-navbar-color: #000;
+}
+header .navbar-toggler {
+  border: var(--bs-border-width) solid #fff;
+}
+header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+header .navbar-nav a.nav-link,
+header .navbar-nav a.nav-link.active {
+  border: 2px solid #F4F4F4;
+  color: #fff;
+}
+header .navbar-nav a.nav-link:focus, header .navbar-nav a.nav-link:hover,
+header .navbar-nav a.nav-link.active:focus,
+header .navbar-nav a.nav-link.active:hover {
+  border-color: #fdd037;
+  color: #000;
+  background-color: #fdd037;
+}
+
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -38,22 +61,6 @@
   font-weight: 800;
   src: url("../fonts/poppins-v20-latin-800.woff2") format("woff2"), url("../fonts/poppins-v20-latin-800.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-header {
-  background: #000;
-}
-header .navbar-nav a.nav-link,
-header .navbar-nav a.nav-link.active {
-  border: 2px solid #F4F4F4;
-  color: #fff;
-}
-header .navbar-nav a.nav-link:focus, header .navbar-nav a.nav-link:hover,
-header .navbar-nav a.nav-link.active:focus,
-header .navbar-nav a.nav-link.active:hover {
-  border-color: #fdd037;
-  color: #000;
-  background-color: #fdd037;
-}
-
 body {
   --bs-body-bg: $white;
   --bs-body-font-family: "Poppins", sans-serif;
