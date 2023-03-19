@@ -160,3 +160,26 @@ body {
         }
     }
 }
+
+.presentation{
+  margin: 0 auto;
+  .title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .header {
+    background:#FDD037;
+    height:47px;
+    border-radius:5px 0;
+  }
+  .content {
+    margin: 0 15px;
+    margin-top: -32px;
+    padding: 7px 3px;
+    background:white;
+    border-radius: 5px;
+    text-align:center;
+  }
+}
