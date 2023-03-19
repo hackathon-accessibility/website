@@ -18,6 +18,7 @@ header {
 
     .navbar-toggler {
         border: var(--bs-border-width) solid $white;
+
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
         }
@@ -65,15 +66,18 @@ body {
         color: $white;
     }
 
-    h1,h2 {
+    h1, h2 {
         font-weight: 800;
     }
+
     h3 {
         font-weight: 500;
     }
-    h4,h5 {
+
+    h4, h5 {
         font-weight: 600
     }
+
     h6 {
         font-weight: 400;
     }
@@ -147,20 +151,41 @@ body {
 
     .bg-dark,
     body {
-        --bs-body-bg: $black;
-        --bs-body-color: $white;
-        --bs-nav-link-color: $white;
-    }
+        --bs-body-bg: #000;
+        --bs-body-color: #FFF;
+        --bs-nav-link-color: #FFF;
 
-    #primary-navigation {
-        .navbar-brand {
-            filter: invert(100%);
+        .presentation .content {
+            background-color: $black;
         }
     }
 }
 
-.presentation {
+h2 {
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
+  display: inline;
+  &::before {
+    position: absolute;
+    content: '';
+      height: 4px;
+      bottom: 5px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: #00D8FE;
+    z-index: -1;
+  }
+}
+
+.presentation{
   margin: 0 auto;
+
+    h2 {
+        display: block;
+    }
   .title {
     font-weight: 700;
       margin-bottom: 20px;
@@ -170,15 +195,34 @@ body {
   }
   .header {
     background:#FDD037;
-    height: 47px;
-    border-radius:5px 0;
+      margin-top: 30px;
+    height:47px;
+    border-radius:5px 5px 0 0;
   }
   .content {
     margin: 0 15px;
     margin-top: -32px;
-      padding: 8px 45px;
+      padding: 20px 45px;
     background:white;
     border-radius: 5px;
-    text-align: left;
+    ul.list {
+      list-style: none;
+      padding-left:10px;
+      li {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      li::before {
+        content: "_";
+        color: #00D8FE;
+      }
+
+    }
+  }
+  .subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 10px 0;
   }
 }

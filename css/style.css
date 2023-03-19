@@ -111,16 +111,39 @@ body footer a:hover, body footer a:focus {
 @media (prefers-color-scheme: dark) {
   .bg-dark,
   body {
-    --bs-body-bg: $black;
-    --bs-body-color: $white;
-    --bs-nav-link-color: $white;
+    --bs-body-bg: #000;
+    --bs-body-color: #FFF;
+    --bs-nav-link-color: #FFF;
   }
-  #primary-navigation .navbar-brand {
-    filter: invert(100%);
+  .bg-dark .presentation .content,
+  body .presentation .content {
+    background-color: #000000;
   }
 }
+h2 {
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
+  display: inline;
+}
+h2::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  bottom: 5px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background: #00D8FE;
+  z-index: -1;
+}
+
 .presentation {
   margin: 0 auto;
+}
+.presentation h2 {
+  display: block;
 }
 .presentation .title {
   font-weight: 700;
@@ -130,14 +153,32 @@ body footer a:hover, body footer a:focus {
 }
 .presentation .header {
   background: #FDD037;
+  margin-top: 30px;
   height: 47px;
-  border-radius: 5px 0;
+  border-radius: 5px 5px 0 0;
 }
 .presentation .content {
   margin: 0 15px;
   margin-top: -32px;
-  padding: 8px 45px;
+  padding: 20px 45px;
   background: white;
   border-radius: 5px;
-  text-align: left;
+}
+.presentation .content ul.list {
+  list-style: none;
+  padding-left: 10px;
+}
+.presentation .content ul.list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.presentation .content ul.list li::before {
+  content: "_";
+  color: #00D8FE;
+}
+.presentation .subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 10px 0;
 }
