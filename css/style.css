@@ -82,6 +82,9 @@ body a:hover {
   color: #595959;
   outline: 3px solid #000;
 }
+body .image-overlay {
+  background-color: #000;
+}
 body .image-overlay img {
   object-fit: cover;
   min-height: 500px;
