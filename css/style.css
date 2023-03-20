@@ -41,7 +41,12 @@ body {
   --bs-body-font-size: 1.25rem;
 }
 body h1 {
-  font-size: 80px;
+  font-size: 2rem;
+}
+@media (min-width: 1180px) {
+  body h1 {
+    font-size: 5rem;
+  }
 }
 body .bg-dark {
   background: #000000;
@@ -70,6 +75,11 @@ body a {
 body a:hover {
   color: #000000;
   outline: 3px solid #000000;
+}
+body .image-overlay img {
+  object-fit: cover;
+  min-height: 500px;
+  max-height: 700px;
 }
 @media (min-width: 768px) {
   body .image-overlay {
@@ -167,7 +177,7 @@ h3 {
   position: absolute;
   content: "";
   height: 30px;
-  top: -10px;
+  bottom: -10px;
   margin: 0 auto;
   left: -10px;
   right: -10px;
