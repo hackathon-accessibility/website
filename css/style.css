@@ -6,7 +6,7 @@
 }
 
 header {
-  background: #000000;
+  background: #000;
   --bs-navbar-color: #000;
 }
 header .navbar-toggler {
@@ -31,7 +31,7 @@ header #primary-navigation .navbar-nav a.nav-link:focus, header #primary-navigat
 header #primary-navigation .navbar-nav a.nav-link.active:focus,
 header #primary-navigation .navbar-nav a.nav-link.active:hover {
   border-color: #fdd037;
-  color: #000000;
+  color: #595959;
   background-color: #fdd037;
 }
 
@@ -49,7 +49,7 @@ body h1 {
   }
 }
 body .bg-dark {
-  background: #000000;
+  background: #000;
   color: #ffffff;
 }
 body h1, body h2 {
@@ -67,19 +67,19 @@ body h6 {
 body .btn.btn-primary {
   background: #00D8FE;
   border: 1px solid #00D8FE;
-  color: #000000;
+  color: #595959;
 }
 body .btn.btn-primary:hover, body .btn.btn-primary:focus {
   border: 1px solid #00D8FE;
   outline: 0;
 }
 body a {
-  color: #000000;
+  color: #595959;
   text-decoration: underline;
 }
 body a:hover {
-  color: #000000;
-  outline: 3px solid #000000;
+  color: #595959;
+  outline: 3px solid #000;
 }
 body .image-overlay img {
   object-fit: cover;
@@ -99,7 +99,7 @@ body .image-overlay img {
     opacity: 0.8;
     top: 0;
     left: 0;
-    background: #000000;
+    background: #000;
   }
 }
 @media (min-width: 768px) {
@@ -113,7 +113,7 @@ body .image-overlay img {
   }
 }
 body footer {
-  background: #000000;
+  background: #000;
   padding: 35px;
   color: #ffffff;
 }
@@ -133,7 +133,7 @@ body footer a:hover, body footer a:focus {
   }
   .bg-dark .presentation .content,
   body .presentation .content {
-    background-color: #000000;
+    background-color: #000;
   }
 }
 h2 {
