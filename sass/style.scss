@@ -119,6 +119,8 @@ body {
 
   .image-overlay {
 
+    background-color: $black;
+
     img {
       object-fit: cover;
       min-height: 500px;
