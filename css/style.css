@@ -66,7 +66,12 @@ body h6 {
 }
 body .btn.btn-primary {
   background: #00D8FE;
+  border: 1px solid #00D8FE;
   color: #000000;
+}
+body .btn.btn-primary:hover, body .btn.btn-primary:focus {
+  border: 1px solid #00D8FE;
+  outline: 0;
 }
 body a {
   color: #000000;

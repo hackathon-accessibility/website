@@ -94,7 +94,14 @@ body {
     .btn {
         &.btn-primary {
             background: $lightblue;
+            border: 1px solid $lightblue;
             color: $black;
+
+          &:hover,
+          &:focus {
+            border: 1px solid $lightblue;
+            outline: 0;
+          }
         }
     }
 
