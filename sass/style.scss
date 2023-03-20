@@ -1,9 +1,11 @@
 // colors
 $white: #ffffff;
 $lightgray: #F4F4F4;
-$black: #000000;
+$black: #000;
+$darkgrey: #595959;
 $yellow: #fdd037;
 $lightblue: #00D8FE;
+
 
 .subheadline {
     font-size: 22px;
@@ -45,7 +47,7 @@ header {
                 &:focus,
                 &:hover {
                     border-color: $yellow;
-                    color: $black;
+                    color: $darkgrey;
                     background-color: $yellow;
                 }
             }
@@ -95,7 +97,7 @@ body {
         &.btn-primary {
             background: $lightblue;
             border: 1px solid $lightblue;
-            color: $black;
+            color: $darkgrey;
 
           &:hover,
           &:focus {
@@ -106,11 +108,11 @@ body {
     }
 
     a {
-        color: $black;
+        color: $darkgrey;
         text-decoration: underline;
 
         &:hover {
-            color: $black;
+            color: $darkgrey;
             outline: 3px solid $black;
         }
     }
