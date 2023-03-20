@@ -67,7 +67,8 @@ body h6 {
 body .btn.btn-primary {
   background: #00D8FE;
   border: 1px solid #00D8FE;
-  color: #595959;
+  color: #525252;
+  font-size: 1.5rem;
 }
 body .btn.btn-primary:hover, body .btn.btn-primary:focus {
   border: 1px solid #00D8FE;
@@ -85,6 +86,7 @@ body .image-overlay img {
   object-fit: cover;
   min-height: 500px;
   max-height: 700px;
+  background-color: #000;
 }
 @media (min-width: 768px) {
   body .image-overlay {
