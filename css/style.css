@@ -38,6 +38,7 @@ header #primary-navigation .navbar-nav a.nav-link.active:hover {
 body {
   --bs-body-bg: $white;
   --bs-body-font-family: "Poppins", sans-serif;
+  --bs-body-font-size: 1.25rem;
 }
 body h1 {
   font-size: 80px;
@@ -141,7 +142,6 @@ h2::before {
 
 h3 {
   text-align: center;
-  font-size: 18px !important;
   margin-bottom: 10px;
 }
 
@@ -176,16 +176,10 @@ h3 {
   border-radius: 5px 5px 0 0;
 }
 .presentation .content ul.list {
-  list-style: none;
   padding-left: 10px;
 }
 .presentation .content ul.list li {
   margin-bottom: 10px;
-  font-size: 14px;
-}
-.presentation .content ul.list li::before {
-  content: "_";
-  color: #00D8FE;
 }
 .presentation .block-list {
   display: flex;
@@ -195,7 +189,6 @@ h3 {
 .presentation .block {
   padding: 20px 12px;
   border-radius: 5px;
-  font-size: 14px;
 }
 .presentation .block:hover {
   background: rgba(253, 208, 55, 0.2509803922);
@@ -207,7 +200,5 @@ h3 {
 }
 .presentation .subtitle {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
   margin: 10px 0;
 }

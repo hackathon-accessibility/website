@@ -57,6 +57,8 @@ body {
     --bs-body-bg: $white;
     --bs-body-font-family: "Poppins", sans-serif;
 
+  --bs-body-font-size: 1.25rem;
+
     h1 {
         font-size: 80px;
     }
@@ -182,7 +184,6 @@ h2 {
 
 h3 {
   text-align: center;
-  font-size: 18px !important;
   margin-bottom: 10px;
 }
 
@@ -219,15 +220,9 @@ h3 {
     }
 
     ul.list {
-      list-style: none;
       padding-left:10px;
       li {
         margin-bottom: 10px;
-        font-size: 14px;
-      }
-      li::before {
-        content: "_";
-        color: #00D8FE;
       }
     }
   }
@@ -247,12 +242,9 @@ h3 {
     }
     padding: 20px 12px;
     border-radius: 5px;
-    font-size: 14px;
   }
   .subtitle{
     font-weight: 700;
-    font-size: 14px;
-    line-height: 14px;
     margin: 10px 0;
   }
 }
